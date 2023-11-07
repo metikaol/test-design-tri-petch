@@ -1,0 +1,554 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+/* set style for bg1 */
+.bg1 {
+    height: 345px;
+    background-color: #FFF;
+    position: relative;
+}
+/* set specific style in bg1 */
+.bg1 .info-back .header-info {
+    margin-top: 24px;
+}
+.bg1 .info-back .title-wrapper {
+    margin-top: 59px;
+}
+.bg1 .info-back .description {
+    margin-top: 31px;
+}
+
+/* set style for bg2 */
+.bg2 {
+    height: 256px;
+    background: #F5F4F9;
+    position: relative;
+}
+/* set specific style in bg2 */
+.bg2 .info-back .title-wrapper {
+    margin-top: 53px;
+}
+.bg2 .info-back .description {
+    margin-top: 21px;
+}
+
+/* set style for bg3 */
+.bg3 {
+    height: 297px;
+    background: #5E3DB3;
+    position: relative;
+}
+/* set specific style in bg3 */
+.bg3 .info-back .title-wrapper {
+    margin-top: 80px;
+}
+.bg3 .info-back .description {
+    margin-top: 21px;
+    color: #FFF;
+}
+.bg3 .info-back .title-wrapper .title-order::after {
+    background: #FFF;
+}
+
+/* set style for bg4 */
+.bg4 {
+    height: 485px;
+    background-color: #FFF;
+    position: relative;
+}
+/* set specific style in bg4 */
+.bg4 .info-front .header-info {
+    margin-top: 124px;
+}
+.bg4 .info-front .title-wrapper {
+    margin-top: 68px;
+}
+.bg4 .info-front .description {
+    margin-top: 21px;
+}
+
+/* set style for bg5 */
+.bg5 {
+    height: 245px;
+    background: #F5F4F9;
+    position: relative;
+}
+/* set specific style in bg5 */
+.bg5 .info-front .title-wrapper {
+    margin-top: 52px;
+}
+.bg5 .info-front .description {
+    margin-top: 21px;
+}
+
+/* set style for bg6 */
+.bg6 {
+    height: 240px;
+    background: #090C35;
+    position: relative;
+}
+/* set specific style in bg6 */
+.bg6 .info-front .title-wrapper {
+    margin-top: 87px;
+}
+.bg6 .info-front .description {
+    margin-top: 21px;
+    color: #FFF;
+}
+.bg6 .info-front .title-wrapper .title-order {
+    color: #8F6BE8;
+}
+.bg6 .info-front .title-wrapper .title-order::after {
+    background: #FFF;
+}
+
+/* display info right side of screen */
+.info-back {
+    position: absolute;
+    top: 0;
+    left: 1008px;
+    max-width: 717px;
+}
+/* display info left side of screen */
+.info-front {
+    position: absolute;
+    top: 0;
+    left: 321px;
+    max-width: 717px;
+}
+
+/* general style for header */
+.header-info {
+    color: #E7E7E7;
+    font-family: Roboto;
+    font-size: 90px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* general style for title */
+.title-wrapper {
+    display: flex;
+    align-items: center;
+}
+.title-order {
+    color: #000;
+    font-family: Roboto;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    position: relative;
+    margin-right: 10px;
+}
+
+.title-order::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -4px;
+    width: 19px;
+    height: 5px;
+    border-radius: 2.5px;
+    background: #603EBE;
+}
+.title {
+    color: #C2C2C2;
+    font-family: Roboto;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 1.5px;
+}
+
+/* general style for description */
+.description {
+    color: #000;
+    font-family: Roboto;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 28px;
+}
+
+
+/* general style for footballer image */
+.footballer {
+    position: absolute;
+    top: 35px;
+    left: 175px;
+    z-index: 2;
+}
+.footballer img {
+    width: 678px;
+    height: 950px;
+}
+
+/* general style for basketball image */
+.basketball {
+    position: absolute;
+    top: 0;
+    left: 804px;
+    z-index: 2;
+}
+.basketball img {
+    width: 991px;
+    height: 815px;
+}
+
+/* hide plus icon1 for desktop screen */
+.plus-icon1 {
+    display: none;
+    position: absolute;
+    top: 110px;
+    left: 59.51px;
+    z-index: 2;
+}
+.plus-icon1 img {
+    width: 15.602px;
+    height: 15px;
+    fill: #5C37B7;
+    stroke-width: 1px;
+    stroke: #9173E6;
+}
+
+/* hide plus icon2 for desktop screen */
+.plus-icon2 {
+    display: none;
+    position: absolute;
+    top: 101px;
+    left: 36.63px;
+    z-index: 2;
+}
+.plus-icon2 img {
+    width: 15.602px;
+    height: 15px;
+    fill: #5C37B7;
+    stroke-width: 1px;
+    stroke: #9173E6;
+    opacity: 0.3;
+}
+
+/* tablet */
+@media only screen and (max-width: 768px) {
+    /* set specific style in bg1 */
+    .bg1 {
+        height: 377px;
+    }
+    .bg1 .info-back .header-info {
+        margin-top: 87px;
+    }
+    .bg1 .info-back .title-wrapper {
+        margin-top: 36px;
+    }
+    .bg1 .info-back .description {
+        margin-top: 21px;
+    }
+
+    /* set specific style in bg2 */
+    .bg2 {
+        height: 235px;
+    }
+    .bg2 .info-back .title-wrapper {
+        margin-top: 30px;
+    }
+    .bg2 .info-back .description {
+        margin-top: 21px;
+    }
+
+    /* set specific style in bg3 */
+    .bg3 {
+        height: 207px;
+    }
+    .bg3 .info-back .title-wrapper {
+        margin-top: 30px;
+    }
+    .bg3 .info-back .description {
+        margin-top: 21px;
+    }
+
+    /* set specific style in bg4 */
+    .bg4 {
+        height: 348px;
+    }
+    .bg4 .info-front .header-info {
+        margin-top: 52px;
+    }
+    .bg4 .info-front .title-wrapper {
+        margin-top: 34px;
+    }
+    .bg4 .info-front .description {
+        margin-top: 21px;
+    }
+
+    /* set specific style in bg5 */
+    .bg5 {
+        height: 235px;
+    }
+    .bg5 .info-front .title-wrapper {
+        margin-top: 51px;
+    }
+    .bg5 .info-front .description {
+        margin-top: 21px;
+    }
+
+    /* set specific style in bg6 */
+    .bg6 {
+        height: 207px;
+    }
+    .bg6 .info-front .title-wrapper {
+        margin-top: 44px;
+    }
+    .bg6 .info-front .description {
+        margin-top: 21px;
+    }
+
+    /* set specific style in description */
+    .description {
+        font-size: 18px;
+    }
+
+    /* set style to display info on right side */
+    .info-back {
+        position: absolute;
+        top: 0;
+        left: 291px;
+        max-width: 447px;
+    }
+    /* set style to display info on left side */
+    .info-front {
+        position: absolute;
+        top: 0;
+        left: 30px;
+        max-width: 432px;
+    }
+    
+    /* set style for footballer image in tablet mode*/
+    .footballer {
+        position: absolute;
+        top: 120px;
+        left: -161px;
+    }
+    .footballer img {
+        width: 518px;
+        height: 699px;
+    }
+    /* set style for basketball image in tablet mode */
+    .basketball {
+        position: absolute;
+        top: 33;
+        left: 331px;
+    }
+    .basketball img {
+        width: 691px;
+        height: 568px;
+    }
+    /* display plus icon for tablet */
+    .plus-icon1 {
+        display: block;
+    }
+    /* display plus icon for tablet */
+    .plus-icon2 {
+        display: block;
+    }
+}
+
+/* mobile */
+@media only screen and (max-width: 320px) {
+    /* hide all info in desktop and tablet mode */
+    .desktop-tablet-wrapper {
+        display: none;
+    }
+
+    /* set specific style in bg1 */
+    .bg1 {
+        height: 296px;
+        background-color: #FFF;
+        position: relative;
+    }
+
+    /* set specific style in bg2 */
+    .bg2 {
+        height: 284px;
+        background: #F5F4F9;;
+        position: relative;
+    }
+
+    .bg2 .info-front .title-wrapper {
+        margin-top: 72px;
+    }
+    .bg2 .info-front .description {
+        margin-top: 21px;
+    }
+
+    /* set specific style in bg3 */
+    .bg3 {
+        height: 315px;
+        background-color: #FFF;
+        position: relative;
+    }
+    .bg3 .header-info {
+        padding-top: 19px;
+    }
+
+    /* set specific style in bg4 */
+    .bg4 {
+        height: 238px;
+        background: #F5F4F9;;
+        position: relative;
+    }
+    .bg4 .info-front .title-wrapper {
+        margin-top: 72px;
+    }
+    .bg4 .info-front .description {
+        margin-top: 20px;
+    }
+    .bg4 .dot-wrapper {
+        top: 198px;
+    }
+
+    /* set style to display info on left side */
+    .info-front {
+        position: absolute;
+        top: 0;
+        left: 18px;
+        max-width: 360px;
+    }
+
+    /* set style for header */
+    .header-info {
+        color: #E7E7E7;
+        font-family: Roboto;
+        font-size: 50px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: no;
+        margin-left: 18px;
+    }
+
+    /* set style for title */
+    .title {
+        color: #C2C2C2;
+        font-family: Roboto;
+        font-size: 28px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.5px;
+    }
+    .title-order {
+        color: #000;
+        font-family: Roboto;
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        letter-spacing: 1.5px;
+    }
+    .title-order::after {
+        bottom: -2px;
+        width: 17px;
+        height: 4px;
+    }
+
+    /* set style for description */
+    .description {
+        color: #000;
+        font-family: Roboto;
+        font-size: 15px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    /* set style for footballer image */
+    .footballer {
+        position: absolute;
+        top: 70px;
+        left: 70px;
+    }
+    .footballer img {
+        width: 200px;
+        height: 281px;
+    }
+
+    /* set style for basketball image */
+    .basketball {
+        position: absolute;
+        top: 101px;
+        left: 3px;
+    }
+    .basketball img {
+        width: 302px;
+        height: 249px;
+    }
+
+    /* set position of plus-icon1 for mobile */
+    .plus-icon1 {
+        position: absolute;
+        top: 90px;
+        left: 74px;
+    }
+    /* set position of plus-icon for mobile */
+    .plus-icon2 {
+        position: absolute;
+        top: 81px;
+        left: 52px;
+    }
+
+    /* hide the athlets slides by default */
+    .athletsSlides {
+        display: none;
+    }
+
+    /* hide the players slides by default */
+    .playersSlides {
+        display: none;
+    }
+
+    /* set style for dots indicators */
+    .dot-wrapper {
+        position: absolute;
+        top: 244px;
+        left: 0;
+        width: 100%;
+        text-align: center;
+    }
+    .dot {
+        cursor: pointer;
+        height: 10px;
+        width: 10px;
+        margin: 0 2px;
+        background-color: #D8D8D8;
+        border-radius: 50%;
+        display: inline-block;
+        transition: background-color 0.6s ease;
+    }
+    .active, .dot:hover {
+        background-color: #603EBE;
+    }
+
+    /* fading animation */
+    .fade {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+    
+    @keyframes fade {
+        from {opacity: .4}
+        to {opacity: 1}
+    }
+}
+
+@media only screen and (min-width: 321px) {
+    /* hide all info in mobile wrapper*/
+    .mobile-wrapper {
+        display: none;
+    }
+    
+}

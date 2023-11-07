@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- desktop and tablet mode start -->
+    <div class="desktop-tablet-wrapper">
+        <!-- bg1 displays footballer image, header, title and description for first athlets -->
+        <div class="bg1">
+            <div class="plus-icon1">
+                <img src="./asset/plus.svg" alt="">
+            </div>
+            <div class="plus-icon2">
+                <img src="./asset/plus.svg" alt="">
+            </div>
+
+            <div class="footballer">
+                <img src="./asset/footballer.svg" alt="">
+            </div>
+            <div class="info-back">
+                <div class="header-info">ATHLETS</div>
+                <div class="title-wrapper">
+                    <span class="title-order">01</span>
+                    <span class="title">CONNECTION</span>
+                </div>
+                <p class="description">Connect with coaches directly, you can ping coaches to view profile</p>
+            </div>
+        </div>
+
+        <!-- bg2 displays title and description for second athlets -->
+        <div class="bg2">
+            <div class="info-back">
+                <div class="title-wrapper">
+                    <span class="title-order">02</span>
+                    <span class="title">COLLABORATION</span>
+                </div>
+                <p class="description">Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.</p>
+            </div>
+        </div>
+
+        <!-- bg3 displays title and description for third athlets -->
+        <div class="bg3">
+            <div class="info-back">
+                <div class="title-wrapper">
+                    <span class="title-order">03</span>
+                    <span class="title">GROWTH</span>
+                </div>
+                <p class="description">Resources and tools for you to get better as a student Athelte. 
+                    Access to training classes, tutor sessions, etc </p>
+            </div>
+        </div>
+
+        <!-- bg4 displays basketball image, header, title and description for first players -->
+        <div class="bg4">
+            <div class="basketball">
+                <img src="./asset/basketball.svg" alt="">
+            </div>
+            <div class="info-front">
+                <div class="header-info">PLAYERS</div>
+                <div class="title-wrapper">
+                    <span class="title-order">01</span>
+                    <span class="title">CONNECTION</span>
+                </div>
+                <p class="description">Connect with talented athlete directly, you can watch their 
+                    skills through video showreels directly from Surface 1.</p>
+            </div>
+        </div>
+
+        <!-- bg5 displays title and description for second players -->
+        <div class="bg5">
+            <div class="info-front">
+                <div class="title-wrapper">
+                    <span class="title-order">02</span>
+                    <span class="title">COLLABORATION</span>
+                </div>
+                <p class="description">Work with recruiter to increase your chances of finding
+                    talented athlete.</p>
+            </div>
+        </div>
+
+        <!-- bg6 displays title and description for third players -->
+        <div class="bg6">
+            <div class="info-front">
+                <div class="title-wrapper">
+                    <span class="title-order">03</span>
+                    <span class="title">GROWTH</span>
+                </div>
+                <p class="description">Save your time, recruit proper athlets for your team.</p>
+            </div>
+        </div>
+    </div>
+    <!-- desktop and tablet mode end -->
+
+    <!-- mobile mode start -->
+    <div class="mobile-wrapper">
+        <!-- bg1 displays header and footballer image -->
+        <div class="bg1">
+            <div class="header-info">ATHLETS</div>
+            <div class="plus-icon1">
+                <img src="./asset/plus.svg" alt="">
+            </div>
+            <div class="plus-icon2">
+                <img src="./asset/plus.svg" alt="">
+            </div>
+
+            <div class="footballer">
+                <img src="./asset/footballer.svg" alt="">
+            </div>
+        </div>
+
+        <!-- bg2 displays titles and descriptions for athlets -->
+        <div class="bg2">
+            <!-- athlets slides start-->
+            <div class="info-front">
+                <div class="athletsSlides fade">
+                    <div class="title-wrapper">
+                        <span class="title-order">01</span>
+                        <span class="title">CONNECTION</span>
+                    </div>
+                    <p class="description">Connect with coaches directly, you can ping coaches to view profile.</p>
+                </div>
+    
+                <div class="athletsSlides fade">
+                    <div class="title-wrapper">
+                        <span class="title-order">02</span>
+                        <span class="title">COLLABORATION</span>
+                    </div>
+                    <p class="description">Work with other student athletes to  increase visability. When you share and like other players videos it will increase your visability as a player. This is the team work aspect to Surface 1.</p>
+                </div>
+    
+                <div class="athletsSlides fade">
+                    <div class="title-wrapper">
+                        <span class="title-order">03</span>
+                        <span class="title">GROWTH</span>
+                    </div>
+                    <p class="description">Resources and tools for you to get better as a student Athelte. Access to training classes, tutor sessions, etc </p>                   
+                </div>
+            </div>
+            <!-- athlets slides end-->
+
+            <!-- athlets dots-->
+            <div class="dot-wrapper">
+                <span class="dot athletsDot" onclick="currentAthletsSlide(1)"></span>
+                <span class="dot athletsDot" onclick="currentAthletsSlide(2)"></span>
+                <span class="dot athletsDot" onclick="currentAthletsSlide(3)"></span>
+            </div>      
+        </div>
+
+        <!-- bg3 displays header and basketball image -->
+        <div class="bg3">
+            <div class="header-info">PLAYERS</div>
+            <div class="basketball">
+                <img src="./asset/basketball.svg" alt="">
+            </div>
+        </div>
+
+        <!-- bg4 displays titles and descriptions for players -->
+        <div class="bg4">
+            <!-- players slides start-->
+            <div class="info-front">
+                <div class="playersSlides fade">
+                    <div class="title-wrapper">
+                        <span class="title-order">01</span>
+                        <span class="title">CONNECTION</span>
+                    </div>
+                    <p class="description">Connect with talented athlete directly, you can watch their 
+                        skills through video showreels directly from Surface 1.</p>
+                </div>
+    
+                <div class="playersSlides fade">
+                    <div class="title-wrapper">
+                        <span class="title-order">02</span>
+                        <span class="title">COLLABORATION</span>
+                    </div>
+                    <p class="description">Work with recruiter to increase your chances of finding
+                        talented athlete.</p>
+                </div>
+    
+                <div class="playersSlides fade">
+                    <div class="title-wrapper">
+                        <span class="title-order">03</span>
+                        <span class="title">GROWTH</span>
+                    </div>
+                    <p class="description">Save your time, recruit proper athlets for your team.</p>                   
+                </div>
+            </div>
+            <!-- players slides end-->
+
+            <!-- players dots-->
+            <div class="dot-wrapper">
+                <span class="dot playersDot" onclick="currentPlayersSlide(1)"></span>
+                <span class="dot playersDot" onclick="currentPlayersSlide(2)"></span>
+                <span class="dot playersDot" onclick="currentPlayersSlide(3)"></span>
+            </div>      
+        </div>       
+    </div>
+    <!-- mobile mode end -->
+    
+    <script src="script.js"></script>
+</body>
+</html>
